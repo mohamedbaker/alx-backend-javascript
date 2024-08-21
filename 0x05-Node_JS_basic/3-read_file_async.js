@@ -14,7 +14,6 @@ const countStudents = (path) => {
       let students = data.filter((item) => item.trim() !== '');
       students = students.map((item) => item.split(','));
 
-      // Assumes the first row is the header
       printItem = `Number of students: ${students.length - 1}`;
       console.log(printItem);
       printOut.push(printItem);
