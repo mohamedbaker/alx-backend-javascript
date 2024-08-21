@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('fs');
+const fs = process.argv.length > 2 ? process.argv[2] : '';
 
 const app = express();
 const path = process.argv[2];
