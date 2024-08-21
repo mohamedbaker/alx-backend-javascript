@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 
 const app = express();
-const path = process.argv[2];
+const path = process.argv.length > 2 ? process.argv[2] : '';
 
 const countStudents = (path) => {
     return new Promise((resolve, reject) => {
